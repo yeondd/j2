@@ -24,7 +24,7 @@ public class WeatherData implements Subject {
   public void notifyObservers(){
     for (int i = 0; i < observers.size(); i++) {
       Observer observer = (Observer)observers.get(i);
-      observer.update(temp, hum, pressure);
+      observer.update(temperature, humidity, pressure);
     }
   }
   
@@ -38,6 +38,7 @@ public class WeatherData implements Subject {
     this.pressure = pressure;
     measurementsChange();
   }
+}
   
  
       

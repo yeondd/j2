@@ -1,4 +1,4 @@
-  package com.j2.observer;
+package com.j2.observer;
   
   public interface Subject {
     public void registerObserver(Observer o);

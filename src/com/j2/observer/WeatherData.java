@@ -6,6 +6,7 @@ public class WeatherData implements Subject {
   private float temperature;
   private float humidity;
   private float pressure;
+
   public WeatherData() {
     observers = new ArrayList();
   }
@@ -37,6 +38,18 @@ public class WeatherData implements Subject {
     this.humidity = humidity;
     this.pressure = pressure;
     measurementsChange();
+  }
+  
+  public float getTemperature() {
+    return temperature;
+  }
+  
+  public float getHumidity(){
+    return humidity;
+  }
+  
+  public float getPressure() {
+    return pressure;
   }
 }
   
