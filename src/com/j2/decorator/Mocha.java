@@ -1,7 +1,7 @@
 package com.j2.decorator;
 
 public class Mocha extends CondimentDecorator{
-  Beverage beverage;
+  //Beverage beverage;
   
   public Mocha(Beverage beverage){
     this.beverage = beverage; //생성자 안에서 만들었음 ->센 관계
@@ -12,5 +12,6 @@ public class Mocha extends CondimentDecorator{
   }
   
   public double cost(){
-    return beverage.cost() + .20;
+    return .20 + beverage.cost();
   }
+}
