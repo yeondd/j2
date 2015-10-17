@@ -1,27 +1,32 @@
 package com.j2.factory;
 
-public abstract class Pizza{ //superclass라서 abstract로 구현
+import java.util.ArrayList
   
+public abstract class Pizza {
   String name;
   
-  void prepare(){
-   System.out.println("preparing..."); 
-  }
-  void bake(){
-   System.out.println("baking..."); 
-  }
-  void cut(){
-   System.out.println("cutting..."); 
-  }
-  void box(){
-   System.out.println("boxing..."); 
+  void prepare() {
+    System.out.println("Preparing... ");
   }
   
-  public String getName(){
+  void bake() {
+    System.out.println("Baking...");
+  }
+  
+  void cut() {
+    System.out,println("Cutting...");
+  }
+  
+  void box() {
+    System.out.println("Boxing...");
+  }
+  
+  public String getName() {
     return name;
   }
   
   public String toString() {
-    System.out.println("----"+name+"----"); 
+    System.out.println("---" + name + "---");
     return name;
   }
+  

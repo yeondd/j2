@@ -1,7 +1,7 @@
-package com.j2.factory;
+package com.j2.factory.pizzafm;
 
 import java.util.ArrayList;
-  
+
 public abstract class Pizza {
   String name;
   String dough;
@@ -39,4 +39,3 @@ public abstract class Pizza {
     return display.toString();
   }
 }
-  

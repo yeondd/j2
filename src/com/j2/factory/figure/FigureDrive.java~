@@ -1,0 +1,14 @@
+package com.j2.factory.figure;
+
+public class FigureDrive {
+  public static void main(String[] args) {
+    FigureStore 2dStore = new 2DFigureStore();
+    FigureStore 3dStore = new 3DFigureStore();
+    
+    Figure figure = 2dStore.orderFigure("circle");
+    System.out.println("You order a 2D figure a " + figure + "\n");
+    
+    figure = 3dStore.orderFigure("square");
+    System.out.println("You order a 3D figure a " + figure + "\n");
+  }
+}

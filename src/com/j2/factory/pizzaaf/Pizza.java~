@@ -4,9 +4,8 @@ public abstract class Pizza {
     String name;
     Dough dough;
     Cheese cheese;
-    Potato potato;
 
-    abstract void prepare();
+    void abstract prepare();
     void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
@@ -31,10 +30,6 @@ public abstract class Pizza {
         }
         if (cheese != null) {
             result.append(cheese);
-            result.append("\n");
-        }
-        if (potato != null) {
-            result.append(potato);
             result.append("\n");
         }
         return result.toString();
