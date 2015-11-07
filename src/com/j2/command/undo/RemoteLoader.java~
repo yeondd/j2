@@ -1,0 +1,14 @@
+package com.j2.command.undo;
+
+public class RemoteLoader {
+  public static void main(String[] args) {
+    
+    RemoteControlWithUndo remote = new RemoteControlWithUndo();
+    Light light = new Light("Living Room");
+    LightOnCommand livingRoomOn = new LightOnCommand();
+    LightOffCommand livingRoomOff = new LightOffCommand();
+    remote.setCommand(0,livingRoomOn, livingRoomOff);
+    remote.onButtonWasPushed(0);
+    remote.offButtonWasPushed(0);
+  }
+}
