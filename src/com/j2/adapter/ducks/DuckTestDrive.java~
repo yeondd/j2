@@ -1,0 +1,18 @@
+package com.j2.adapter.ducks;
+
+public class DuckTestDrive {
+  public static void main(String[] args){
+    MallardDuck duck = new MallardDck();
+    WildTurkey turkey = new turkey();
+    
+    TurkeyAdqpter turkeyAapter = new TurkeyAdapter(turkey);
+    System.cou.println("Turkey says");
+    turkey.gobble();
+    turkey.fly();
+    System.out.println("Turkey Adapter says");
+    turkeyAdapter.quack();
+    turkeyAdapter.fly();
+  }
+}
+
+    
