@@ -1,0 +1,9 @@
+package com.j2.templatemethod.sort.comparator;
+
+import java.util.Comparator;
+
+public class DuckSortbyName implements Comparator<Duck>{
+ public int compare(Duck o1, Duck o2) {
+  return (o1.name < o2.name) ? -1 : (o1.name > o2.name) ? 1:0;
+ }
+}
