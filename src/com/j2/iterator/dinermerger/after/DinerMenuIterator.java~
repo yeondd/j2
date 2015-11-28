@@ -1,0 +1,19 @@
+package com.j2.iterator.dinermerge.after;
+import com.j2.iterator.dinermerge.before.MenuItem;
+
+public class DinerMenuIterator implements Iterator {
+  MenuItem[] items;
+  int position = 0;
+  public DinerMenuIterator(MenuItem[] items){
+    this.itmes = items;
+  }
+  
+  public boolean hasNext() {
+    if(position >= items.lenth() || itmes[position} == null){
+      return false;
+    } else {
+      return true;
+    }
+    
+public Object next {}
+  

@@ -1,0 +1,22 @@
+package com.j2.iterator.dinermerger.before;
+
+public class MenuItem {
+    private String name;
+    private String description;
+    private boolean vegetarian;
+    private double price;
+    
+    public MenuItem(String n, String d, boolean v, double p){
+      this.name = n;
+      this.description = d;
+      this.vegetarian = v;
+      this.price = p;
+    }
+    public String getName(){return name;}
+    public String getDescription(){return description;}
+    public double getPrice(){return price;}
+    public boolean isVegetarian(){return vegetarian;}
+    public String toString(){
+      return name+" ,$" + price;
+    }
+}
