@@ -27,22 +27,22 @@ public class Waitress {
     }
   }
   
-  public void printVMenu(){
+  public void printMenuForV(){
    Iterator pI = pm.createIterator();
    Iterator dI = dm.createIterator();
-   System.out.println("<< 아침메뉴 >>");
-   printVegetarianMenu(pI);
-   System.out.println("<< 점심메뉴 >>");
-   printVegetarianMenu(dI);
+   System.out.println("<< Pancake House's Menu for Vegetarian >>");
+   printMenuForVegetarian(pI);
+   System.out.println("<< Diner's Menu for Vegetarian >>");
+   printMenuForVegetarian(dI);
   }
   
-  public void printVegetarianMenu(Iterator iterator){
+  public void printMenuForVegetarian(Iterator iterator){
      while(iterator.hasNext()){
        MenuItem menuItem = (MenuItem)iterator.next();
        if(menuItem.isVegetarian()){
-      System.out.println(menuItem.getName());
+      System.out.println(menuItem.getName() + ", ");
       System.out.println(menuItem.getDescription());
-      System.out.println(menuItem.getPrice());
+      System.out.println(menuItem.getPrice() + " -- ");
       System.out.println(" ");
        } 
      }

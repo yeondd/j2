@@ -7,6 +7,6 @@ public class MenuTestDrive {
     Waitress w = new Waitress(pm, dm);
     
     System.out.println("vegitrian Menu");
-    w.printVMenu();
+    w.printMenuForV();
   }
 }
