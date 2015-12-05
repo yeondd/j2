@@ -1,0 +1,29 @@
+package com.j2.state.gumballstate;
+
+public class BrokenState implements State {
+  GumballMachine gm;
+  
+  public BrokenState(GumballMachine gm){
+    this.gm = gm;
+  }
+  
+  public void insertBrokenQuarter(){
+    
+  }
+  
+  public void insertQuarter() {
+    
+  }
+  
+  public void ejectQuarter(){
+    
+  }
+  
+  public void turnCrank(){
+    
+  }
+  
+  public void dispense(){
+    
+  }
+}

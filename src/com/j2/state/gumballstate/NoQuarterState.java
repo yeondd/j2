@@ -1,0 +1,31 @@
+package com.j2.state.gumballstate;
+
+public class NoQuarterState implements State {
+  GumballMachine gm;
+  
+  public NoQuarterState(GumballMachine gm){
+    this.gm = gm;
+  }
+  
+  public void insertBrokenQuarter(){
+    System.out.println("Your coin is broke. Plese insert another coin.");
+    gm.setState(gm.getBrokenState());
+  }
+  
+  public void insertQuarter() {
+     System.out.println("You inserted a quareter");
+     gm.setState(gm.getHasQuarterState()); //state = HAS_QUARTER;
+  }
+  
+  public void ejectQuarter(){
+    System.out.println("You haven't inserted a quarter");
+  }
+  
+  public void turnCrank(){
+   System.out.println("You turned but there's no quarter"); 
+  }
+  
+  public void dispense(){
+    System.out.println("Pay first");
+  }
+}
